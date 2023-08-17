@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Permanent Marker', 'Lilita One', 'Bree Serif', 'Patua One',  'Comic Sans MS';
+    background: url('/asset/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 620px;
+    
+}
+
+.box {
+    background-color: #7b7ff6;
+    border-radius: 20px;
+    height: 620px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    height: 115%;
+    width: 115%;
+    left: -7.5%;
+    top: -10%;
+    background-color: #7bd5f5;
+    border-radius: 60px;
+    z-index: -1;
+}
+
+main {
+    text-align: center;
+    height: 620px;
+    font-family: 'Comic Sans MS';
+}
+
+h1 {
+    color: #7bd5f5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+img {
+    margin-bottom: 2px;
+}
+
+.input-section {
+    height: 220px;
+    display: "flex";
+    flex-direction: column;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    padding: 4px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    margin: 6px;
+    font-family: 'Comic Sans MS';
+}
+
+input:hover {
+    border-color: #ed511d;
+}
+
+div.flex-container {
+    display: "flex";
+}
+
+button {
+    position: relative;
+    padding: 5px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(#4adede,#1ca7ec);
+    color: #1f2f98;
+    font-family: 'Comic Sans MS';
+}
+
+.switch:hover {
+    background-color: #367E18;
+    color: #ECF8F9;
+}
+
+.calculate:hover {
+    background-color: #1D267D;
+    color: #ECF8F9;
+}
+
+.reset:hover {
+    background-color: #e00000;
+    color: #ECF8F9;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.result {
+    margin: 14px;
+    width: px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: xx-large;
+    color: #1f2f98;
+    background-image: linear-gradient(#4adede,#1ca7ec);
+}

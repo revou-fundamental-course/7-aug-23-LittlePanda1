@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KaRit!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <main class="content">
+                <h1>KaRit!</h1>
+                <img src="asset/segitiga.jpg">
+                <section class="input-section" id="Luas">
+                    <label for="Tinggi">Tinggi(t)</label>
+                    <input type="number" id="Tinggi" placeholder="" min="">
+                    <label for="Alas">Alas(a)</label>
+                    <input type="number" id="Alas" placeholder="" min="" >
+                </section>
+                <section class="input-section" id="Keliling" style="display: none;">
+                    <label for="a">Sisi "a"</label>
+                    <input type="number" id="a" placeholder="" min="" >
+                    <label for="b">Sisi "b"</label>
+                    <input type="number" id="b" placeholder="" min="" >
+                    <label for="c">Sisi "c"</label>
+                    <input type="number" id="c" placeholder="" min="" >
+                </section>
+                <div class="flex-container" id="tombol-luas">
+                    <button class="switch" id="ke-keliling">Keliling</button>
+                    <button class="calculate" id="Luas" onclick="hasilLuas()">Hitung</button>
+                    <button class="reset" id="resetLuas" onclick="hapusLuas()">Reset</button>
+                </div>
+                <div class="flex-container" id="tombol-keliling" style="display: none;">
+                    <button class="switch" id="ke-luas">Luas</button>
+                    <button class="calculate" id="Keliling" onclick="hasilKeliling()">Hitung</button>
+                    <button class="reset" id="resetKeliling" onclick="hapusKeliling()">Reset</button>
+                </div>
+                <div class="result" id="Luas-result">0</div>
+                <div class="result" id="Keliling-result" style="display: none;">0</div>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
